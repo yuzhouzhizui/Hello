@@ -1,0 +1,13 @@
+<resources>
+
+    <string name="app_name">Hotel</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_login">Login</string>
+    <string name="ok">OK</string>
+    <string name="Manage">管理</string>
+        <string name="Regis">报修</string>
+            <string name="Repair">维修</string>
+                <string name="QueryResult">查询结果</string>
+
+</resources>

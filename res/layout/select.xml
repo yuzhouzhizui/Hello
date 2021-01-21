@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFF0"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="10dp"
+        android:text="查询"
+        android:textColor="#00cc00"
+        android:textSize="50dp" />
+
+    <TableLayout
+        
+        
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical" >
+
+        <TableRow android:gravity="center" >
+
+            <TextView
+                android:id="@+id/textname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="房间号:"
+                android:textSize="30dp" />
+
+            <EditText
+                android:id="@+id/query_room_id"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="请输入房间号" />
+
+            <LinearLayout
+                
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="bottom"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/query_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="查询"
+                    android:textSize="20dp" />
+            </LinearLayout>
+        </TableRow>
+
+        <WebView
+            android:id="@+id/weserach"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+    </TableLayout>
+
+</LinearLayout>

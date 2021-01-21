@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFF0"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="维修"
+        android:textColor="#00CC00"
+        android:textSize="50dp" />
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="房  间  号:"
+                android:textSize="25dp" />
+
+            <EditText
+                android:id="@+id/rep_room_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="修理事项:"
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/repMatter"
+                android:layout_width="200dp"
+                android:layout_height="35dp" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="状态:"
+                android:textSize="25dp" />
+
+            <Spinner
+                android:id="@+id/repStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/status" />
+        </TableRow>
+
+        <TableRow android:layout_gravity="center_horizontal" >
+
+            <Button
+                android:id="@+id/rep_commit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:text="查询"
+                android:textSize="20dp" />
+
+            <Button
+                android:id="@+id/rep_select"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="100dp"
+                android:text="删除"
+                android:textSize="20dp" />
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

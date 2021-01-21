@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFF0"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="10dp"
+        android:text="登录"
+        android:textColor="#00cc00"
+        android:textSize="50dp"
+        tools:context=".MainActivity" />
+
+    <TableLayout
+        android:layout_marginTop="50dp"
+        android:layout_width="351dp"
+        android:layout_height="413dp"
+        android:orientation="vertical" >
+
+        <TableRow android:gravity="center"
+             >
+
+            <TextView
+                android:id="@+id/textname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="用户名:"
+                android:textSize="30dp" />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/name"
+                android:hint="请输入用户名" />
+        </TableRow>
+
+        <TableRow android:gravity="center"
+            android:layout_marginTop="30dp" >
+
+            <TextView
+                android:id="@+id/textpassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="密    码:"
+                android:textSize="30dp" />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/password"
+                android:hint="请输入登录密码"
+                android:password="true" />
+        </TableRow>
+
+        <TableRow android:gravity="center"
+            android:layout_marginTop="30dp" >
+
+            <TextView
+                android:id="@+id/textView0"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="类    型："
+                android:textSize="30dp" >
+            </TextView>
+
+            <Spinner
+                android:id="@+id/Spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:entries="@array/message" >
+            </Spinner>
+        </TableRow>
+        <TableLayout
+             android:id="@+id/tablelayout03"
+           android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+             android:stretchColumns="3"
+              >
+
+
+        <TableRow android:gravity="center"
+            android:layout_marginTop="30dp">
+            <Button
+
+                android:layout_height="wrap_content"
+                android:text="注册"
+                android:id="@+id/reg"
+                android:textSize="20dp"
+                android:layout_gravity="center_horizontal" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="登录"
+                android:id="@+id/login"
+                android:textSize="20dp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginRight="10dp"
+                android:text="取消"
+                android:id="@+id/cancel"
+                android:textSize="20dp" />
+        </TableRow>
+
+    </TableLayout>
+
+    </TableLayout>
+
+</LinearLayout>
